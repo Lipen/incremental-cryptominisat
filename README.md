@@ -1,3 +1,6 @@
+[![Docker Hub](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/lipen/incremental-cryptominisat)
+
+
 # incremental-cryptominisat
 
 Wrapper for _iterative_ (_incremental_) SAT solving using [cryptominisat](https://github.com/msoos/cryptominisat).
@@ -5,6 +8,20 @@ Wrapper for _iterative_ (_incremental_) SAT solving using [cryptominisat](https:
 Original idea and base code is taken from [EFSM-tools](https://github.com/ulyantsev/EFSM-tools/tree/master/incremental-cryptominisat).
 
 ## Installation
+
+### Old-fashioned binary
+
+Simply execute `make`.
+
+### Docker image
+
+Pull from [Docker Hub](https://hub.docker.com):
+
+```
+docker pull lipen/incremental-cryptominisat
+```
+
+or build it yourself:
 
 ```
 docker build -t incremental-cryptominisat .
@@ -14,7 +31,7 @@ docker build -t incremental-cryptominisat .
 ## Usage
 
 ```
-docker run --rm -i incremental-cryptominisat < icnf
+docker run --rm -i lipen/incremental-cryptominisat < icnf
 ## SAT
 ## v -1 -2 -3
 ## SAT
