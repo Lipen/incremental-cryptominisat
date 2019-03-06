@@ -1,5 +1,4 @@
 #include <cryptominisat5/cryptominisat.h>
-#include <cryptominisat5/solvertypesmini.h>
 #include <vector>
 #include <sstream>
 #include <stdlib.h>
